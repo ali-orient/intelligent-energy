@@ -1,0 +1,27 @@
+.main {
+    padding: 10px 0;
+}
+
+.introHeading {
+    color: #555555 !important;
+    font-size: 20px !important;
+    text-transform: uppercase !important;
+    margin: 0 0 10px !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.introText {
+    color: #6a6a6a;
+    line-height: 1.8em;
+    text-align: justify;
+    display: block;
+    font-size: 15px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Hind", sans-serif !important;
+}
+
+
+/*  */

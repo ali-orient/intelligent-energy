@@ -1,0 +1,137 @@
+.main {
+    padding: 10px 0;
+}
+
+.introHeading {
+    color: #555555 !important;
+    font-size: 20px !important;
+    text-transform: uppercase !important;
+    margin: 0 0 10px !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.introText {
+    color: #6a6a6a;
+    line-height: 1.8em;
+    text-align: justify;
+    display: block;
+    font-size: 15px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Hind", sans-serif !important;
+}
+
+.readMore {
+    color: #555555;
+    font-size: 100%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: white;
+    border: 0px solid white;
+    padding-left: 0px;
+    font-family: "Hind", sans-serif !important;
+}
+
+.readMore:hover,
+.readMore:active,
+.readMore:focus {
+    color: #555555;
+    font-size: 100%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: white;
+    border: 0px solid white;
+}
+
+#more {
+    display: none;
+}
+
+
+/*  */
+
+.owl-item .active {
+    width: 250px;
+}
+
+.msacwl-gallery-carousel .msacwl-gallery-caption {
+    padding: 15px!important;
+}
+
+.msacwl-gallery-caption {
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    padding: 5px 5px 10px 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    right: 0;
+    line-height: 35px;
+    width: 263px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Hind", sans-serif !important;
+}
+
+.msacwl-gallery-caption a {
+    color: #fff;
+    font-family: "Hind", sans-serif !important;
+}
+
+.owl-stage {
+    width: 4760px !important;
+}
+
+.media-slider {
+    width: 273px !important;
+    height: 200px !important;
+}
+
+.media-slider img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.single-service-style-one .flip-hover {
+    width: 273px !important;
+}
+
+.item {
+    width: 273px !important;
+    margin-right: 10px !important;
+}
+
+.owl-item {
+    margin-right: 130px !important;
+}
+
+.mfp-img {
+    width: 800px !important;
+    height: 530px !important;
+}
+
+.img-popup .industrio-icon-next {
+    /* padding: 5px 0; */
+    font-family: "Hind", sans-serif !important;
+}
+
+.industrio-icon-next:before {
+    content: "" !important;
+}
+
+.owl-theme {
+    margin-bottom: 50px !important;
+}
+
+.service-carousel-one .owl-nav [class*="owl-"] {
+    background: #555555 !important;
+}
+
+.service-carousel-one .owl-nav [class*="owl-"] i {
+    color: white;
+}

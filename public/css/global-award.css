@@ -1,0 +1,13 @@
+.img-popup {
+  left: 0px;
+  padding: 20px 60px;
+  text-align: center;
+}
+
+button.mfp-arrow {
+  display: none;
+}
+
+.mfp-counter {
+  display: none;
+}
