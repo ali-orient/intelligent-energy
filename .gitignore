@@ -24,6 +24,8 @@ dist-ssr/
 .DS_Store
 Thumbs.db
 
+dist.zip
+
 # Environment variables (Crucial for security)
 .env
 .env.local
