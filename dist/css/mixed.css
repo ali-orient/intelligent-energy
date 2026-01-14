@@ -3458,8 +3458,7 @@ body.active-preloader-ovh {
     background-color: rgb(0, 0, 0, 0.5);
     padding-top: 10px;
     padding-bottom: 10px;
-    overflow: hidden;
-    height: 53px;
+    min-height: 53px;
     position: relative;
     text-align: center;
 }
@@ -3477,6 +3476,11 @@ body.active-preloader-ovh {
     font-family: "Poppins";
     line-height: 1.2em;
     margin: 0;
+}
+
+.single-service-style-four .img-box .box .content h3.long-title {
+    font-size: 22px;
+    line-height: 1.25em;
 }
 
 .single-service-style-four .img-box .box .content h3 {

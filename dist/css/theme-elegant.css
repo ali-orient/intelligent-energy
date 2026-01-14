@@ -10,12 +10,11 @@
 /* Global Color & Typography Overrides */
 body {
     color: var(--text-color);
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--secondary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
     color: var(--heading-color);
     text-transform: uppercase;
     letter-spacing: 2px; /* Elegant tracking */
@@ -29,6 +28,48 @@ a {
 
 a:hover, a:focus, a:active {
     color: var(--primary-color) !important;
+}
+
+.introText {
+    margin: 0 0 12px !important;
+}
+
+.lube-oil-page .sidebar .single-sidebar.service-sidebar ul.service-list li:hover a,
+.lube-oil-page .sidebar .single-sidebar.service-sidebar ul.service-list li.active a {
+    color: #fff !important;
+}
+
+.power-generation-page .sidebar .single-sidebar.service-sidebar ul.service-list li:hover a,
+.power-generation-page .sidebar .single-sidebar.service-sidebar ul.service-list li.active a {
+    color: #fff !important;
+}
+
+.renewable-energy-page .sidebar .single-sidebar.service-sidebar ul.service-list li:hover a,
+.renewable-energy-page .sidebar .single-sidebar.service-sidebar ul.service-list li.active a {
+    color: #fff !important;
+    background: #000 !important;
+}
+
+.renewable-energy-page .sidebar .single-sidebar.service-sidebar ul.service-list li a {
+    color: #000 !important;
+    background: #fff !important;
+}
+
+.lube-oil-page .service-item-box .masonary-layout,
+.power-generation-page .service-item-box .masonary-layout,
+.renewable-energy-page .service-item-box .masonary-layout,
+.fire-security-page .service-item-box .masonary-layout {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 991px) {
+    .lube-oil-page .sidebar-wrapper,
+    .power-generation-page .sidebar-wrapper,
+    .renewable-energy-page .sidebar-wrapper,
+    .fire-security-page .sidebar-wrapper {
+        margin-top: 30px;
+    }
 }
 
 /* Button Overrides - Minimalist */
@@ -501,8 +542,7 @@ a:hover, a:focus, a:active {
 }
 
 .single-service-style-four:hover .img-box img,
-.single-service-style-three:hover .img-box img,
-.single-portfolio-style-two:hover .img-box img {
+.single-service-style-three:hover .img-box img {
     transform: scale(1.03);
 }
 
@@ -599,8 +639,35 @@ a:hover, a:focus, a:active {
     }
 }
 
-/* Feature trio text color overrides for white cards */
+/* Fix text color for light feature boxes to be black */
 .feature-style-one .single-feature-style-one.light .text-box h3,
 .feature-style-one .single-feature-style-one.light .text-box p {
     color: #000000 !important;
+}
+.feature-style-one .single-feature-style-one.light .icon-box i {
+    color: #000000 !important;
+}
+
+.page-wrapper.index .contact-info-style-one .sec-title.title h3 span,
+.page-wrapper.index .fact-elegant-title h3 span {
+    background: none;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff;
+}
+
+.page-wrapper.index .brand-carousel-area .sec-title h3 span,
+.page-wrapper.index .portfolio-style-two .sec-title h3 span,
+.page-wrapper.index .service-style-three .sec-title h3 span,
+.page-wrapper.index .service-style-four.about-page .sec-title h3 span {
+    background: none;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    color: #262626;
+    -webkit-text-fill-color: #262626;
+}
+
+.page-wrapper.index .contact-info-style-one .contact-infos .single-contact-infos .text-box h3 {
+    color: #ffffff;
 }

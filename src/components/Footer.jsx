@@ -47,7 +47,7 @@ export default function Footer() {
              <h3>Services</h3>
              <ul style={{listStyle:'none',padding:0,margin:0,lineHeight:1.8}}>
                 <li><Link to="/engineering">Engineering</Link></li>
-                <li><Link to="/product-support">Product Support Services</Link></li>
+                <li><Link to="/services">Product Support Services</Link></li>
                 <li><Link to="/product-support-parts">Product Support Parts</Link></li>
              </ul>
           </div>

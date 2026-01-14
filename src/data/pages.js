@@ -65,6 +65,7 @@ export default [
   { path: '/blog-details', title: 'Blog Details' },
   { path: '/coming-soon', title: 'Coming Soon' },
   { path: '/service', title: 'Service' },
+  { path: '/services', title: 'Services' },
   { path: '/team', title: 'Team' },
   { path: '/single-service', title: 'Single Service' },
   { path: '/single-project', title: 'Single Project' },

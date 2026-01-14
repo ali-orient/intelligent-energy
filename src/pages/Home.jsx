@@ -117,7 +117,7 @@ export default function Home() {
                                 <div className="box">
                                   <div className="content">
                                     <div className="content-head">
-                                      <h3>{b.title}</h3>
+                                      <h3 className={b.title.length > 16 ? 'long-title' : ''}>{b.title}</h3>
                                     </div>
                                   </div>
                                 </div>
@@ -156,7 +156,7 @@ export default function Home() {
                   </div>
 
                   <div className="col-md-4 col-sm-6 col-xs-12">
-                    <Link to="/product-support" className="solution-card">
+                    <Link to="/services" className="solution-card">
                       <div className="solution-image-wrapper">
                         <img className="solution-image" src="img/service2.jpg" alt="Services" />
                       </div>
@@ -362,19 +362,12 @@ export default function Home() {
                       <div className="contact-infos">
                           <div className="single-contact-infos col-md-6">
                               <div className="icon-box"><i className="industrio-icon-phone-call cIcons"></i></div>
-                              <div className="text-box"><h3>Call us on</h3><p>+971 4 3926207</p></div>
+                              <div className="text-box"><h3>Call us</h3><p>+971 4 3926207</p></div>
                           </div>
                           <div className="single-contact-infos col-md-6">
                               <div className="icon-box"><i className="industrio-icon-envelope cIcons"></i></div>
                               <div className="text-box"><h3>Email us</h3><p>info@intelligentenergy.ae</p></div>
                           </div>
-                      </div>
-                      <div className="contact-infos" style={{marginTop:50}}>
-                           <div className="single-contact-infos col-md-2"><a href="#" className="fab fa-facebook-f sIcons"></a></div>
-                           <div className="single-contact-infos col-md-2"><a href="#" className="fab fa-youtube sIcons"></a></div>
-                           <div className="single-contact-infos col-md-2"><a href="#" className="fab fa-linkedin-in sIcons"></a></div>
-                           <div className="single-contact-infos col-md-2"><a href="#" className="fab fa-instagram"></a></div>
-                           <div className="single-contact-infos col-md-2"><a href="#" className="fab fa-twitter"></a></div>
                       </div>
                   </div>
               </div>

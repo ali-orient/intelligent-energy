@@ -123,7 +123,7 @@ export default function Header({ homeBelowHero = false } = {}) {
                 </a>
                 <ul className="sub-menu">
                     <li><Link to="/engineering">Engineering</Link></li>
-                    <li><Link to="/product-support">Services</Link></li>
+                    <li><Link to="/services">Services</Link></li>
                     <li><Link to="/product-support-parts">Parts</Link></li>
                 </ul>
               </li>
@@ -131,7 +131,9 @@ export default function Header({ homeBelowHero = false } = {}) {
               <li className={location.pathname === '/project' ? 'current' : ''}>
                 <Link to="/project">Projects</Link>
               </li>
-
+                  <li className={location.pathname === '/contact' ? 'current' : ''}>
+                <Link to="/contact">Contact Us</Link>
+              </li>
             </ul>
           </div>
 
@@ -166,7 +168,7 @@ export default function Header({ homeBelowHero = false } = {}) {
                           <Link to="/engineering" onClick={() => setMobileMenuOpen(false)}>Engineering</Link>
                         </li>
                         <li className="mb-mega-sub-menu-ul-li">
-                          <Link to="/product-support" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+                          <Link to="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
                         </li>
                         <li className="mb-mega-sub-menu-ul-li">
                           <Link to="/product-support-parts" onClick={() => setMobileMenuOpen(false)}>Parts</Link>
@@ -176,6 +178,7 @@ export default function Header({ homeBelowHero = false } = {}) {
                     <li>
                       <Link to="/project" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
                     </li>
+                    <li><Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link></li>
                 </ul>
              </div>
         </div>
