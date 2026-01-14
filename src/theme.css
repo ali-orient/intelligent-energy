@@ -150,4 +150,78 @@ a:hover { text-decoration: underline }
   .page-wrapper.index .service-style-four.about-page .single-service-style-four .img-box .box .content h3 {
     padding-left: 0 !important;
   }
+
+  .page-wrapper > .container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-home-two .navbar-brand img {
+    height: 44px;
+    max-height: 44px;
+    transform: none;
+    transform-origin: center;
+  }
+
+  .header-home-two.stricky-fixed .navbar-brand img {
+    height: 40px;
+    max-height: 40px;
+    transform: none;
+    transform-origin: center;
+  }
+
+  .page-wrapper.index .contact-info-style-one .contact-infos {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-left: 0 !important;
+  }
+
+  .page-wrapper.index .contact-info-style-one .single-contact-infos {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-wrapper.index .contact-info-style-one .contact-infos {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+  }
+
+  .page-wrapper.index .contact-info-style-one .contact-infos .single-contact-infos {
+    display: flex !important;
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-wrapper.index .contact-info-style-one .contact-infos .single-contact-infos .icon-box,
+  .page-wrapper.index .contact-info-style-one .contact-infos .single-contact-infos .text-box {
+    display: block !important;
+  }
+
+  .page-wrapper.index .contact-info-style-one .contact-infos .single-contact-infos .icon-box {
+    width: auto !important;
+  }
+
+  .page-wrapper.index .contact-info-style-one .contact-infos .single-contact-infos .text-box {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+
+  .page-wrapper.index .contact-info-style-one .contact-infos .single-contact-infos .text-box p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
 }
