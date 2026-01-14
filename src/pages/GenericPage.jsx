@@ -84,10 +84,29 @@ export default function GenericPage({ title }) {
   const [renewableEnergyTab, setRenewableEnergyTab] = useState('solar')
   const [fireSecurityTab, setFireSecurityTab] = useState('security')
 
+  const contentColStyle = { textAlign: 'left' }
+  const introHeadingStyle = {
+    fontSize: '20px',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+    textTransform: 'uppercase',
+    textAlign: 'left'
+  }
+  const sectionHeadingStyle = {
+    fontSize: '20px',
+    fontWeight: 'bold',
+    margin: '30px 0 15px',
+    textTransform: 'uppercase',
+    textAlign: 'left'
+  }
+  const paragraphStyle = { marginBottom: '20px', lineHeight: '1.8', color: '#666', textAlign: 'left' }
+  const listStyle = { paddingLeft: '20px', marginBottom: '20px', lineHeight: '1.8', color: '#666', textAlign: 'left' }
+
   if (isContact) {
-    const mapsUrl = 'https://maps.app.goo.gl/MNUiXrx3qb3odhWU8'
+    const mapsUrl =
+      'https://www.google.com/maps/place/A7+dubai+digital+park/@25.119896,55.3758996,1577m/data=!3m1!1e3!4m6!3m5!1s0x3e5f65d717e41d0f:0x4a4d3a641d4ddbba!8m2!3d25.1198912!4d55.3784745!16s%2Fg%2F11tddb6vds?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D'
     const mapsEmbedUrl =
-      'https://www.google.com/maps?q=Intelligent%20Energy%20Equipment%20General%20Trading%20LLC%20Dubai%20Silicon%20Oasis&output=embed'
+      'https://www.google.com/maps?q=25.1198912,55.3784745&z=18&output=embed'
 
     return (
       <div className="page-wrapper contact-us-page">
@@ -184,14 +203,7 @@ export default function GenericPage({ title }) {
                   src={mapsEmbedUrl}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0, pointerEvents: 'none' }}
-                />
-                <a
-                  href={mapsUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Open location in Google Maps"
-                  style={{ position: 'absolute', inset: 0, display: 'block' }}
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
                 />
               </div>
             </div>
@@ -225,44 +237,43 @@ export default function GenericPage({ title }) {
 
         <div className="container" style={{ padding: '60px 0' }}>
           <div className="row">
-            <div className="col-md-9">
-              <br />
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: '500', marginBottom: '20px', textTransform: 'uppercase' }}>INTRODUCTION</h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+            <div className="col-md-9" style={contentColStyle}>
+              <h5 className="introHeading" style={introHeadingStyle}>INTRODUCTION</h5>
+              <p className="introText" style={paragraphStyle}>
                 “The management at Intelligent Energy has designed its product support department in such a way, so as to provide the best customer support that is needed to attain the highest level of customer satisfaction”
               </p>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 We recognize the expectations of customers; therefore we are focused on delivering real 24/7 support. Our success is mainly dependant upon our ability to support our customers.
               </p>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 Our trained and qualified staff is vigilant in highlighting equipment performance that enables us to reduce the potential down time. Our after sales specialists are continuously in touch with customers for business guidance. Our spare parts ensure maximum service life and reliability to your equipment while our operation &amp; maintenance is a complete plant management package with cost effectiveness.
               </p>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 Our mobile service teams comprising of trained staff; regularly visit all customers in order to ensure that your machines run smoothly and for any other requirement we are always equipped with spare parts and hands-on services support.
               </p>
 
               <div id="more">
-                <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: '500', margin: '30px 0 15px', textTransform: 'uppercase' }}>
+                <h5 className="introHeading" style={sectionHeadingStyle}>
                   THAT IS THE REASON WE SAY 'Intelligent' PRODUCT SUPPORT, A FULLY INTEGRATED SOLUTION PROVIDER’.
                 </h5>
-                <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+                <p className="introText" style={paragraphStyle}>
                   For almost 16 years, Intellignet Energy had a successful experience in power generation services; we hold excellent relationship with our clients and we aim to consistently provide our customers quick serving through our proactive sales team, reliable service, parts back up and technical expertise.
                 </p>
-                <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: '500', margin: '30px 0 15px', textTransform: 'uppercase' }}>
+                <h5 className="introHeading" style={sectionHeadingStyle}>
                   OUR INTEGRATED CUSTOMER SUPPORT FUNCTIONS ENSURE THAT WE OFFER EXCELLENT CUSTOMER SERVICE AND MEET CUSTOMER SATISFACTION LEVELS.
                 </h5>
-                <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: '500', margin: '30px 0 15px', textTransform: 'uppercase' }}>
+                <h5 className="introHeading" style={sectionHeadingStyle}>
                   OUR SERVICES
                 </h5>
-                <ul className="unorderList" style={{ paddingLeft: '20px', marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+                <ul className="unorderList" style={listStyle}>
                   <li>Field services (scheduled &amp; unscheduled maintenances).</li>
                   <li>Workshop services (overhauling &amp; repairing).</li>
                   <li>Specialized services (commissioning &amp; consultancy).</li>
                 </ul>
-                <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: '500', margin: '30px 0 15px', textTransform: 'uppercase' }}>
+                <h5 className="introHeading" style={sectionHeadingStyle}>
                   PARTS
                 </h5>
-                <ul className="unorderList" style={{ paddingLeft: '20px', marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+                <ul className="unorderList" style={listStyle}>
                   <li>100% genuine parts</li>
                   <li>Parts Warranty coverage- as per policy</li>
                   <li>Parts distribution all over Middle East</li>
@@ -333,25 +344,19 @@ export default function GenericPage({ title }) {
 
         <div className="container" style={{ padding: '60px 0' }}>
           <div className="row">
-            <div className="col-md-9">
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', textTransform: 'uppercase' }}>
-                INTRODUCTION
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+            <div className="col-md-9" style={contentColStyle}>
+              <h5 className="introHeading" style={introHeadingStyle}>INTRODUCTION</h5>
+              <p className="introText" style={paragraphStyle}>
                 Our success is mainly depending upon our ability to support our customers. Our spare parts ensure maximum service life and reliability to your equipment.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                SPARE PARTS
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>SPARE PARTS</h5>
+              <p className="introText" style={paragraphStyle}>
                 Our parts department sales support function and warehousing for Middle East region. Our newly designed tailor made warehouse meets huge spare parts demand to cater power generation business.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                FEATURES OF PARTS DEPARTMENT
-              </h5>
-              <ul className="unorderList1" style={{ paddingLeft: 0 }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>FEATURES OF PARTS DEPARTMENT</h5>
+              <ul className="unorderList1" style={listStyle}>
                 <li>100% genuine parts country wide availability.</li>
                 <li>24/7 parts issuance.</li>
                 <li>Parts distribution network all over Middle East.</li>
@@ -360,24 +365,20 @@ export default function GenericPage({ title }) {
                 <li>Standby parts delivery van.</li>
               </ul>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                AFTER MARKET
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>AFTER MARKET</h5>
+              <p className="introText" style={paragraphStyle}>
                 Our dedicated teams of after market specialists are available 24/7 for customers support not only in words but in true spirit. Our sales team comprises of market specialists. They closely work with customers and this is the key of our customer’s business knowledge.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                FEATURES OF AFTER SALES DEPARTMENT
-              </h5>
-              <ul className="unorderList1" style={{ paddingLeft: 0 }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>FEATURES OF AFTER SALES DEPARTMENT</h5>
+              <ul className="unorderList1" style={listStyle}>
                 <li>After sales team with a friendly attitude.</li>
                 <li>Always striving for building customer relationship.</li>
                 <li>Proactive sales strategy to meet on time customer demands of parts &amp; services.</li>
                 <li>Remarkable front desk customer support to cater customers’ needs.</li>
               </ul>
 
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 Contact us today to learn more about how we can help you with Product Support Parts.
               </p>
             </div>
@@ -547,80 +548,64 @@ export default function GenericPage({ title }) {
 
         <div className="container" style={{ padding: '60px 0' }}>
           <div className="row">
-            <div className="col-md-9">
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', textTransform: 'uppercase' }}>
-                INTRODUCTION
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+            <div className="col-md-9" style={contentColStyle}>
+              <h5 className="introHeading" style={introHeadingStyle}>INTRODUCTION</h5>
+              <p className="introText" style={paragraphStyle}>
                 Comprising of highly qualified professionals, our Engineering department offers both Pre-Sales and Post-Sales support to our customers. Our experienced engineers with detailed product knowledge ensure a seamless and effective transfer from project designing to the installation phase.
               </p>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 Our engineering teams incorporate Electrical/Electronic, Mechanical & Civil engineers along with a dedicated team of Computer Aided Design (CAD) staff. The engineering teams support gas/diesel generation/HVAC/RO/Solar/Air compression projects. It means we are a one window solution provider to our valued customers. For industrial utilities, we have an un-match capability in the market.
               </p>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 Our engineers are highly trained and work closely with their principals in order to best integrate their products into projects. The team has comprehensive knowledge of a wide range of industrial utilities applications which can be drawn to support installation. The team provides input to projects from the sales stage and continues to engineering, installation complying the Principal standards & requirements.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                COMPUTER AIDED DESIGN
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>COMPUTER AIDED DESIGN</h5>
+              <p className="introText" style={paragraphStyle}>
                 Our CAD team provides accurate scale drawings, diagrams and process & instrumentation diagrams (P&amp;IDs) to support the sales, engineering and project management teams. Design work is typically conducted in three dimensions and utilises a number of tools including Autocad Plant, Autocad P&amp;ID and CADworks.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                MECHANICAL ENGINEERING
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>MECHANICAL ENGINEERING</h5>
+              <p className="introText" style={paragraphStyle}>
                 Our experienced application/project engineers help support engineering of the mechanical elements of the plant.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                ELECTRICAL/ELECTRONIC ENGINEERING
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>ELECTRICAL/ELECTRONIC ENGINEERING</h5>
+              <p className="introText" style={paragraphStyle}>
                 Our employs a number of application and project electrical/electronic engineers who specialize in the electrical/electronic field to support the project. The team is an integral component of our engineering capabilities and is experienced in local/international electrical standards and requirements.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                PROJECT MANAGEMENT
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>PROJECT MANAGEMENT</h5>
+              <p className="introText" style={paragraphStyle}>
                 Intelligent Energy provides added value to the customer by offering a comprehensive project management service for the installation of projects. At point of order, Intelligent Energy assigns a dedicated project engineer to the installation supervision job who is customer’s primary point of contact following the sales phase and coordinates the engineering, installation and commissioning of equipment.
               </p>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 For all EPC projects our project management team (including project/construction manager with team of QA/QC and HSE) follows a structured approach to deliver a high quality project on time and within budget whilst aiming to meet and exceed the customer expectations. We have trained engineers on Primavera software for controlling and monitoring project activities effectively by developing a S-Curve through software.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                HEALTH, SAFETY & ENVIROMENT
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>HEALTH, SAFETY & ENVIROMENT</h5>
+              <p className="introText" style={paragraphStyle}>
                 We is dedicated to ensuring the safety of employees and subcontractors to the highest levels as to minimize any risks associated with work.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                HEAT RECOVERY OPTIONS
-              </h5>
-              <p className="introText" style={{ marginBottom: '10px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>HEAT RECOVERY OPTIONS</h5>
+              <p className="introText" style={{ ...paragraphStyle, marginBottom: '10px' }}>
                 The efficient utilization of the waste heat from the engine to produce:
               </p>
-              <ul className="unorderList1" style={{ paddingLeft: 0 }}>
+              <ul className="unorderList1" style={listStyle}>
                 <li>Steam / hot water</li>
                 <li>Cooling</li>
               </ul>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 Together with Electrical Power from a single power plant, increases the overall efficiency of the plant.
               </p>
 
-              <h5 className="introHeading" style={{ fontSize: '20px', fontWeight: 'bold', margin: '30px 0 15px', textTransform: 'uppercase' }}>
-                EXCELLENCE
-              </h5>
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <h5 className="introHeading" style={sectionHeadingStyle}>EXCELLENCE</h5>
+              <p className="introText" style={paragraphStyle}>
                 This is our core expertise to execute Co-generation as well as Tri-Generation project.
               </p>
 
-              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+              <p className="introText" style={paragraphStyle}>
                 Contact us today to learn more about how we can help you with Engineering.
               </p>
             </div>
