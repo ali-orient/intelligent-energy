@@ -4,21 +4,27 @@ import { Link } from 'react-router-dom'
 export default function Project() {
   const items = [
     { src: 'img/project-page-1.jpg', title: 'K-Electric', href: '/k-electric', classes: 'chemical' },
-    { src: 'img/project-page-2.jpg', title: 'Zephyr', href: '/zephyr', classes: 'energy chemical' },
-    { src: 'img/project-page-3.jpg', title: 'Gold Crest Mall', href: '/gold-crest-mall', classes: 'oil' },
-    { src: 'img/project-page-4.jpg', title: 'Sapphire', href: '/sapphire', classes: 'chemical' },
-    { src: 'img/project-page-5.jpg', title: 'Meezan Bank', href: '/meezan-bank', classes: 'chemical' },
+    { src: 'img/project-page-2.jpg', title: 'Zephyr', href: '/zephyr', classes: 'chemical' },
+    { src: 'img/project-page-3.jpg', title: 'Gold Crest Mall', href: '/gold-crest-mall', classes: 'chemical' },
+    { src: 'img/project-page-4.jpg', title: 'Sapphire', href: '/sapphire', classes: 'energy' },
+    { src: 'img/project-page-5.jpg', title: 'Meezan Bank', href: '/meezan-bank', classes: 'energy' },
     { src: 'img/project-page-6.jpg', title: 'Al Karam', href: '/al-karam', classes: 'chemical' },
     { src: 'img/project-page-7.jpg', title: 'Ahmad Jamal', href: '/ahmad-jamal', classes: 'chemical' },
     { src: 'img/project-page-8.jpg', title: 'Jadeed Feeds Industries', href: '/jadeed-feeds-industries', classes: 'chemical' },
-    { src: 'img/project-page-9.jpg', title: 'Inmatec', href: '/inmatec', classes: 'construction' },
-    { src: 'img/project-page-10.jpg', title: 'Lucky One Mall', href: '/luck-one-mall', classes: 'oil' },
+    { src: 'img/project-page-9.jpg', title: 'Inmatec', href: '/inmatec', classes: 'chemical' },
+    { src: 'img/project-page-10.jpg', title: 'Lucky One Mall', href: '/luck-one-mall', classes: 'chemical' },
     { src: 'img/project-page-11.jpg', title: 'Diamer Bhasha Dam WAPDA', href: '/diamer-bhasha-dam-wapda', classes: 'chemical' },
-    { src: 'img/project-page-12.jpg', title: 'Shaukat Khanum Hospital', href: '/shaukat-khanum-memorial-cancer-hospital-peshawar', classes: 'chemical' },
+    {
+      src: 'img/project-page-12.jpg',
+      title: 'Shaukat Khanum Hospital',
+      href: '/shaukat-khanum-memorial-cancer-hospital-peshawar',
+      classes: 'oil'
+    },
     { src: 'img/project-page-13.jpg', title: 'M5 Motorway', href: '/m5-motorway', classes: 'chemical' },
-    { src: 'img/project-page-14.jpg', title: 'Transmission & Distribution', href: '/t-d', classes: 'construction' },
-    { src: 'img/project-page-15.jpg', title: 'Cummins Power Generation', href: '/cummins-power-generation', classes: 'chemical' },
-    { src: 'img/project-page-16.jpg', title: 'Siemens Gamesa Renewable Energy', href: '/siemens-gamesa-renewable-energy', classes: 'energy' }
+    { src: 'img/project-page-14.jpg', title: 'Transmission & Distribution', href: '/t-d', classes: 'chemical' },
+    { src: 'img/project-page-15.jpg', title: 'Cummins Power Generation', href: '/cummins-power-generation', classes: 'energy' },
+    { src: 'img/project-page-16.jpg', title: 'Siemens Gamesa Renewable Energy', href: '/siemens-gamesa-renewable-energy', classes: 'construction' },
+    { src: 'img/bahria_1.jpg', title: 'Bahria', href: '/bahria', classes: 'construction' }
   ]
 
   const filters = [

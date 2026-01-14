@@ -153,12 +153,14 @@ export default function Header({ homeBelowHero = false } = {}) {
                     <li><Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
                     <li><Link to="/about" onClick={() => setMobileMenuOpen(false)}>About Us</Link></li>
                     <li>
-                      <a className="mb-toggle">
-                        <span className="subnav-toggler">
-                          <p onClick={() => toggleMobileDropdown('solutions')}>
-                            Solutions <span className="fa fa-caret-down"></span>
-                          </p>
-                        </span>
+                      <a
+                        href="#"
+                        onClick={e => {
+                          e.preventDefault();
+                          toggleMobileDropdown('solutions');
+                        }}
+                      >
+                        Solutions <span className="fa fa-caret-down"></span>
                       </a>
                       <ul
                         className="sub-menu"

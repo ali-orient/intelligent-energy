@@ -135,10 +135,14 @@ a:hover, a:focus, a:active {
 .navbar-brand img {
     height: 56px;
     width: auto;
+    transform: scale(1.2);
+    transform-origin: left center;
 }
 
 .stricky-fixed .navbar-brand img {
     height: 48px;
+    transform: scale(1.4);
+    transform-origin: left center;
 }
 
 .main-navigation {
@@ -161,6 +165,7 @@ a:hover, a:focus, a:active {
     letter-spacing: 1px;
     font-size: 14px;
     padding: 10px 0;
+    white-space: nowrap;
 }
 
 @media (max-width: 991px) {

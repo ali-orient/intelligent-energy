@@ -7,6 +7,7 @@ export default function GenericPage({ title }) {
   const isAbout = location.pathname === '/about'
   const isEngineering = location.pathname === '/engineering'
   const isProductSupportParts = location.pathname === '/product-support-parts'
+  const isContact = location.pathname === '/contact'
   const isLubeOil = location.pathname === '/lube-oil'
   const isPowerGeneration = location.pathname === '/power-generation'
   const isRenewableEnergy = location.pathname === '/renewable-energy'
@@ -82,6 +83,111 @@ export default function GenericPage({ title }) {
   const [powerGenerationTab, setPowerGenerationTab] = useState('diesel')
   const [renewableEnergyTab, setRenewableEnergyTab] = useState('solar')
   const [fireSecurityTab, setFireSecurityTab] = useState('security')
+
+  if (isContact) {
+    const mapsUrl = 'https://maps.app.goo.gl/NZh1d9kNtVkfmGpf8'
+    const mapsEmbedUrl =
+      'https://www.google.com/maps?q=Intelligent%20Energy%20Generating%20Equipment%20Trading%20LLC%20Dubai&output=embed'
+
+    return (
+      <div className="page-wrapper contact-us-page">
+        <div
+          className="inner-banner"
+          style={{
+            background:
+              'linear-gradient(rgba(0, 0 ,0 , .2), rgba(0, 0 ,0 , .2)), url(css/breadCrumbsBackgroundImages/contactus.jpg) center center/cover no-repeat',
+            height: '250px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center'
+          }}
+        >
+          <div className="container">
+            <h3 style={{ color: '#fff', fontSize: '36px', fontWeight: 'bold', textTransform: 'uppercase' }}>
+              Contact Us
+            </h3>
+          </div>
+        </div>
+
+        <div className="container" style={{ padding: '60px 0' }}>
+          <div className="row">
+            <div className="col-md-7 col-sm-12 col-xs-12">
+              <h5
+                className="introHeading"
+                style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', textTransform: 'uppercase' }}
+              >
+                Get In Touch
+              </h5>
+
+              <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
+                Reach out for enquiries, proposals, or support. We’ll get back to you as soon as possible.
+              </p>
+
+              <div style={{ background: '#f9f9f9', padding: '22px 20px' }}>
+                <div style={{ display: 'grid', gap: 14 }}>
+                  <div>
+                    <strong>Address</strong>
+                    <div style={{ color: '#666', marginTop: 6, lineHeight: 1.7 }}>
+                      Intelligent Energy Generating Equipment Trading LLC
+                      <br />
+                      Dubai, United Arab Emirates
+                    </div>
+                  </div>
+
+                  <div>
+                    <strong>Phone</strong>
+                    <div style={{ marginTop: 6 }}>
+                      <a href="tel:+97143926207" style={{ color: '#666' }}>
+                        +971 4 3926207
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <strong>Email</strong>
+                    <div style={{ marginTop: 6 }}>
+                      <a href="mailto:info@intelligentenergy.ae" style={{ color: '#666' }}>
+                        info@intelligentenergy.ae
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <strong>Location</strong>
+                    <div style={{ marginTop: 6 }}>
+                      <a href={mapsUrl} target="_blank" rel="noreferrer" style={{ color: '#666' }}>
+                        Open in Google Maps
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-5 col-sm-12 col-xs-12">
+              <div style={{ position: 'relative', width: '100%', paddingTop: '70%', border: '1px solid #eee' }}>
+                <iframe
+                  title="Dubai Location Map"
+                  src={mapsEmbedUrl}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0, pointerEvents: 'none' }}
+                />
+                <a
+                  href={mapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open location in Google Maps"
+                  style={{ position: 'absolute', inset: 0, display: 'block' }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   if (isServices) {
     return (
@@ -166,13 +272,13 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>About Us</Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>Engineering</Link>
                   </li>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>Services</Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>Parts</Link>
                   </li>
                   
                 </ul>
@@ -271,13 +377,13 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>About Us</Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>Engineering</Link>
                   </li>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>Services</Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>Parts</Link>
                   </li>
                   
                 </ul>
@@ -379,13 +485,13 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>About Us</Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>Engineering</Link>
                   </li>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>Services</Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>Parts</Link>
                   </li>
                   
                 </ul>
@@ -514,13 +620,13 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>About Us</Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>Engineering</Link>
                   </li>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>Services</Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>Parts</Link>
                   </li>
                   
                 </ul>
@@ -798,11 +904,6 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>
-                      About Us
-                    </Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>
                       Engineering
                     </Link>
@@ -810,6 +911,11 @@ export default function GenericPage({ title }) {
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>
                       Services
+                    </Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>
+                      Parts
                     </Link>
                   </li>
                 </ul>
@@ -1004,11 +1110,6 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>
-                      About Us
-                    </Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>
                       Engineering
                     </Link>
@@ -1016,6 +1117,11 @@ export default function GenericPage({ title }) {
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>
                       Services
+                    </Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>
+                      Parts
                     </Link>
                   </li>
                 </ul>
@@ -1155,11 +1261,6 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>
-                      About Us
-                    </Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>
                       Engineering
                     </Link>
@@ -1167,6 +1268,11 @@ export default function GenericPage({ title }) {
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>
                       Services
+                    </Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>
+                      Parts
                     </Link>
                   </li>
                 </ul>
@@ -1256,11 +1362,6 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>
-                      About Us
-                    </Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>
                       Engineering
                     </Link>
@@ -1268,6 +1369,11 @@ export default function GenericPage({ title }) {
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>
                       Services
+                    </Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>
+                      Parts
                     </Link>
                   </li>
                 </ul>
@@ -1570,11 +1676,6 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>
-                      About Us
-                    </Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>
                       Engineering
                     </Link>
@@ -1582,6 +1683,11 @@ export default function GenericPage({ title }) {
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>
                       Services
+                    </Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>
+                      Parts
                     </Link>
                   </li>
                 </ul>
@@ -1671,11 +1777,6 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>
-                      About Us
-                    </Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>
                       Engineering
                     </Link>
@@ -1683,6 +1784,11 @@ export default function GenericPage({ title }) {
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>
                       Services
+                    </Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>
+                      Parts
                     </Link>
                   </li>
                 </ul>
@@ -1775,11 +1881,6 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>
-                      About Us
-                    </Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>
                       Engineering
                     </Link>
@@ -1787,6 +1888,11 @@ export default function GenericPage({ title }) {
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>
                       Services
+                    </Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>
+                      Parts
                     </Link>
                   </li>
                 </ul>
@@ -1869,11 +1975,6 @@ export default function GenericPage({ title }) {
                 </h4>
                 <ul className="sidebar-nav" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-                    <Link to="/about" style={{ color: '#555', display: 'block' }}>
-                      About Us
-                    </Link>
-                  </li>
-                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/engineering" style={{ color: '#555', display: 'block' }}>
                       Engineering
                     </Link>
@@ -1881,6 +1982,11 @@ export default function GenericPage({ title }) {
                   <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
                     <Link to="/services" style={{ color: '#555', display: 'block' }}>
                       Services
+                    </Link>
+                  </li>
+                  <li style={{ marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                    <Link to="/product-support-parts" style={{ color: '#555', display: 'block' }}>
+                      Parts
                     </Link>
                   </li>
                 </ul>
@@ -1968,13 +2074,13 @@ export default function GenericPage({ title }) {
                     <h4 style={{fontSize: '18px', fontWeight: 'bold', marginBottom: '20px', borderBottom: '2px solid #333', paddingBottom: '10px'}}>Quick Links</h4>
                     <ul className="sidebar-nav" style={{listStyle: 'none', padding: 0, margin: 0}}>
                         <li style={{marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px'}}>
-                            <Link to="/about" style={{color: '#555', display: 'block'}}>About Us</Link>
-                        </li>
-                        <li style={{marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px'}}>
                             <Link to="/engineering" style={{color: '#555', display: 'block'}}>Engineering</Link>
                         </li>
                         <li style={{marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px'}}>
                             <Link to="/services" style={{color: '#555', display: 'block'}}>Services</Link>
+                        </li>
+                        <li style={{marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '10px'}}>
+                            <Link to="/product-support-parts" style={{color: '#555', display: 'block'}}>Parts</Link>
                         </li>
                     </ul>
 

@@ -128,3 +128,26 @@ a:hover { text-decoration: underline }
   .grid { gap: 16px }
   .footer { padding: 40px 0 32px }
 }
+
+.page-wrapper.index .service-style-four.about-page .single-service-style-four .img-box .box {
+  justify-content: center;
+}
+
+.page-wrapper.index .service-style-four.about-page .single-service-style-four .img-box .box .content {
+  padding-left: 0;
+  text-align: center;
+}
+
+.page-wrapper.index .service-style-four.about-page .single-service-style-four .img-box .box .content .content-head {
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .page-wrapper.index .service-style-four.about-page .single-service-style-four .img-box .box .content .content-head {
+    text-align: center !important;
+  }
+
+  .page-wrapper.index .service-style-four.about-page .single-service-style-four .img-box .box .content h3 {
+    padding-left: 0 !important;
+  }
+}

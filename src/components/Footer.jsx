@@ -54,7 +54,29 @@ export default function Footer() {
 
           {/* Map */}
           <div>
-            <img src="/img/map.png" alt="Map" style={{width:'100%',maxWidth:370,height:'auto'}} />
+            <a
+              href="https://maps.app.goo.gl/NZh1d9kNtVkfmGpf8"
+              target="_blank"
+              rel="noreferrer"
+              style={{ display: 'block', position: 'relative', width: '100%', maxWidth: 370 }}
+            >
+              <img src="/img/map.png" alt="Map" style={{width:'100%',maxWidth:370,height:'auto'}} />
+              <span
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  left: '73%',
+                  top: '56%',
+                  width: 12,
+                  height: 12,
+                  background: '#ef4444',
+                  borderRadius: '50%',
+                  border: '2px solid #fff',
+                  boxShadow: '0 0 0 4px rgba(239, 68, 68, 0.25)',
+                  transform: 'translate(-50%, -50%)'
+                }}
+              />
+            </a>
           </div>
 
         </div>
