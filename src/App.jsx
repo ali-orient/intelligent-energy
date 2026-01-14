@@ -28,6 +28,44 @@ export default function App() {
           <Route path="*" element={<GenericPage title="404 Not Found" />} />
         </Routes>
       </main>
+      {location.pathname !== '/contact' ? (
+        <section className="contact-info-style-one">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="sec-title title">
+                  <h3>
+                    Get in <span>touch</span>
+                  </h3>
+                  <p>Get answers to your questions about products, sales, support or any other query.</p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="contact-infos">
+                  <div className="single-contact-infos col-md-6">
+                    <div className="icon-box">
+                      <i className="industrio-icon-phone-call cIcons"></i>
+                    </div>
+                    <div className="text-box">
+                      <h3>Call us</h3>
+                      <p>+971 4 3926207</p>
+                    </div>
+                  </div>
+                  <div className="single-contact-infos col-md-6">
+                    <div className="icon-box">
+                      <i className="industrio-icon-envelope cIcons"></i>
+                    </div>
+                    <div className="text-box">
+                      <h3>Email us</h3>
+                      <p>info@intelligentenergy.ae</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
     </div>
   )
 }

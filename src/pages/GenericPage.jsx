@@ -85,9 +85,9 @@ export default function GenericPage({ title }) {
   const [fireSecurityTab, setFireSecurityTab] = useState('security')
 
   if (isContact) {
-    const mapsUrl = 'https://maps.app.goo.gl/NZh1d9kNtVkfmGpf8'
+    const mapsUrl = 'https://maps.app.goo.gl/MNUiXrx3qb3odhWU8'
     const mapsEmbedUrl =
-      'https://www.google.com/maps?q=Intelligent%20Energy%20Generating%20Equipment%20Trading%20LLC%20Dubai&output=embed'
+      'https://www.google.com/maps?q=Intelligent%20Energy%20Equipment%20General%20Trading%20LLC%20Dubai%20Silicon%20Oasis&output=embed'
 
     return (
       <div className="page-wrapper contact-us-page">
@@ -121,7 +121,8 @@ export default function GenericPage({ title }) {
               </h5>
 
               <p className="introText" style={{ marginBottom: '20px', lineHeight: '1.8', color: '#666' }}>
-                Reach out for enquiries, proposals, or support. We’ll get back to you as soon as possible.
+                Have questions or need assistance? We’re here to help. Feel free to reach out to us for any inquiries, support, or feedback. Our team is committed to responding promptly and ensuring you receive the information and assistance you need.
+
               </p>
 
               <div style={{ background: '#f9f9f9', padding: '22px 20px' }}>
@@ -129,9 +130,13 @@ export default function GenericPage({ title }) {
                   <div>
                     <strong>Address</strong>
                     <div style={{ color: '#666', marginTop: 6, lineHeight: 1.7 }}>
-                      Intelligent Energy Generating Equipment Trading LLC
+                      Intelligent Energy Equipment General Trading LLC
                       <br />
-                      Dubai, United Arab Emirates
+                      Digital Park, Building A7, Office No. 122 to128
+                      <br />
+                      Dubai Silicon Oasis, Dubai, UAE
+                      <br />
+                      P.O. Box 54652
                     </div>
                   </div>
 
@@ -139,8 +144,15 @@ export default function GenericPage({ title }) {
                     <strong>Phone</strong>
                     <div style={{ marginTop: 6 }}>
                       <a href="tel:+97143926207" style={{ color: '#666' }}>
-                        +971 4 3926207
+                        +971 4 392 6207
                       </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <strong>Fax</strong>
+                    <div style={{ color: '#666', marginTop: 6 }}>
+                      +971 4 392 6208
                     </div>
                   </div>
 
@@ -678,8 +690,7 @@ export default function GenericPage({ title }) {
                   <p className="introText">
                     Intelligent Energy is one of the leading multinational engineering companies in Middle East and
                     South Asia, distributing internationally recognized power generation &amp; industrial solutions and
-                    services. Intelligent Energy started its operation in the year 1996, pursuant to the company&apos;s
-                    philosophy, &apos;Power for All&apos;, Intelligent Energy empowers people and their businesses by bringing to them the
+                    services. Intelligent Energy empowers people and their businesses by bringing to them the
                     best global performers of the field of power generation and industrial solutions. Our strength lies
                     in our ability to understand market demands, keeping up with the changing technological trends,
                     building relationships and offering solutions, which are the most dependable, efficient,
